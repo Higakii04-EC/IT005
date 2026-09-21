@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2 - Giới thiệu bản thân & Giao lưu</title>
+    <!-- Nhúng External CSS từ file styles.css -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <!-- Thẻ <nav> làm menu điều hướng kết nối tới id của 2 phần -->
+    <nav>
+        <a href="#gioi-thieu">Giới thiệu bản thân</a>
+        <a href="#giao-luu">Gửi thông tin và liên hệ cùng tôi</a>
+    </nav>
+
+    <!-- Phân tách 1: Giới thiệu bản thân -->
+    <div id="gioi-thieu">
+        
+        <!-- Inline CSS phối màu tiêu đề h1, h2, h3 -->
+        <h1 style="background-color: #CAEDFF;">Giới thiệu bản thân</h1>
+
+        <!-- Inline CSS canh giữa ảnh đại diện -->
+        <div style="text-align: center;">
+            <img src="https://theselfishmeme.co.uk/wp-content/uploads/2025/10/anh-con-bo-meme-cute-3.webp" alt="Ảnh đại diện" width="100" height="100">
+        </div>
+
+        <h2 style="background-color: #D8B4F8;">Thông tin cơ bản</h2>
+        <ul>
+            <li>Tên: Trần Nguyễn Minh Nhật</li>
+            <li>Năm sinh: 2006</li>
+            <li>Chuyên ngành: Hệ thống thông tin</li>
+        </ul>
+
+        <h2 style="background-color: #D8B4F8;">Sở thích</h2>
+
+        <h3 style="background-color: #FFC7EA;">Món ăn</h3>
+        <ol>
+            <li>Cơm</li>
+            <li>Mì xào</li>
+            <li>Gà rán</li>
+        </ol>
+
+        <h3 style="background-color: #FFC7EA;">Giải trí</h3>
+
+        <h4>Trò chơi</h4>
+        <ul>
+            <li>LOL</li>
+            <li>Chạy bộ</li>
+            <li>Cầu lông</li>
+        </ul>
+
+        <h4>Bài nhạc yêu thích</h4>
+        <ul>
+            <li>Xa xôi_MCK ft Obito</li>
+            <li>Thu cuối_Yanbi ft Mr.A</li>
+            <li>Castlevenia_Hustlang Robber</li>
+        </ul>
+
+        <h2 style="background-color: #D8B4F8;">Mục tiêu của bản thân</h2>
+        
+        <!-- Thêm Bảng mục tiêu với 3 cột: Mục tiêu, Thời hạn, Hoàn thành -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Mục tiêu</th>
+                    <th>Thời hạn</th>
+                    <th>Hoàn thành</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Trung bình điểm môn web đạt 8.0</td>
+                    <td>15/01/2025</td>
+                    <td style="text-align: center;"><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Đạt chứng chỉ ngoại ngữ đủ chuẩn tốt nghiệp</td>
+                    <td>30/06/2026</td>
+                    <td style="text-align: center;"><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Chọn được công ty với vị trí backend developer</td>
+                    <td>31/12/2027</td>
+                    <td style="text-align: center;"><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <!-- Phân tách 2: Gửi thông tin và giao lưu cùng tôi -->
+    <div id="giao-luu">
+        <h1 style="background-color: #CAEDFF;">Gửi thông tin và giao lưu cùng tôi</h1>
+        
+        <!-- Form nhập thông tin tương ứng với ảnh mẫu BT2 -->
+        <form>
+            <p>
+                <label for="fullname">Họ và tên:</label>
+                <input type="text" id="fullname" name="fullname">
+            </p>
+            
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </p>
+            
+            <p>
+                <label for="message">Tin nhắn:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+            </p>
+            
+            <p>
+                Giới tính: 
+                <input type="radio" id="nam" name="gender" value="Nam">
+                <label for="nam">Nam</label>
+                <input type="radio" id="nu" name="gender" value="Nữ">
+                <label for="nu">Nữ</label>
+            </p>
+            
+            <p>
+                Sở thích: 
+                <input type="checkbox" id="nghenhac" name="hobby" value="Nghe nhạc">
+                <label for="nghenhac">Nghe nhạc</label>
+                <input type="checkbox" id="boiloi" name="hobby" value="Bơi lội">
+                <label for="boiloi">Bơi lội</label>
+                <input type="checkbox" id="bien" name="hobby" value="Biển">
+                <label for="bien">Biển</label>
+            </p>
+            
+            <p>
+                <label for="nganh">Ngành:</label>
+                <select id="nganh" name="nganh">
+                    <option value="khmt">Khoa học Máy tính</option>
+                    <option value="httt" selected>Hệ thống thông tin</option>
+                    <option value="cnpm">Công nghệ Phần mềm</option>
+                    <option value="ktmt">Kỹ thuật Máy tính</option>
+                </select>
+            </p>
+            
+            <p>
+                <input type="submit" value="Gửi">
+            </p>
+        </form>
+    </div>
+
+    <!-- Thẻ <footer> bổ sung thông tin bản quyền/sinh viên -->
+    <footer>
+        <p>@2024 24522073 Trần Nguyễn Minh Nhật</p>
+    </footer>
+
+</body>
+</html>
